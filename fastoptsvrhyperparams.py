@@ -14,9 +14,9 @@ from sklearn import model_selection, svm, datasets
 from sklearn.model_selection import train_test_split, GridSearchCV
 
 # Settings
-svr_cs = 2 ** np.arange(-5, 10, dtype=float)  # Candidates of C
-svr_epsilons = 2 ** np.arange(-10, 0, dtype=float)  # Candidates of epsilon
-svr_gammas = 2 ** np.arange(-20, 10, dtype=float)  # Candidates of gamma
+svr_cs = 2 ** np.arange(-5, 11, dtype=float)  # Candidates of C
+svr_epsilons = 2 ** np.arange(-10, 1, dtype=float)  # Candidates of epsilon
+svr_gammas = 2 ** np.arange(-20, 11, dtype=float)  # Candidates of gamma
 fold_number = 5  # "fold_number"-fold cross-validation
 number_of_training_samples = 1000
 number_of_test_samples = 1000
